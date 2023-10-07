@@ -1,0 +1,171 @@
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Onest', sans-serif;
+	font-weight: 400;
+	color: #fffcf0;
+	font-size: 18px;
+	overflow: hidden;
+}
+
+header{
+	display: flex;
+	margin: 0;
+	padding: 90px 0 0 0;
+	width: 100vw;
+	height: 100vh;
+	background: url(images/background.jpg) center/cover no-repeat;
+	position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	width: 1140px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.left{
+	display: block;
+}
+
+.left img{
+	width: 90%;
+	height: auto;
+	padding: 2.5%;
+	background: linear-gradient(180deg, #faeaaf, #f9f5dc);
+	border-radius: 100%;
+}
+
+.slogan{
+	margin: 50px 0 0 0;
+	padding: 25px;
+	width: 90%;
+	background: linear-gradient(90deg, #f4d98a, rgba(0, 0, 0, 0));
+	border-radius: 20px;
+}
+
+.slogan h1{
+	margin: 0;
+	padding: 0;
+	font-size: 32px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slogan p{
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+.right{
+	display: block;
+}
+
+.name{
+	margin: 75px 50px 0 0;
+	padding: 0;
+}
+
+.name h1{
+	margin:  0 0 0 8px;
+	padding: 0;
+	font-size: 32px;
+	color: #e7dba1;
+}
+
+.name ul{
+	margin: 15px 0 0 0;
+	padding: 0;
+}
+
+.name ul li{
+	list-style-type: none;
+}
+
+.name p{
+	margin: 15px 0 0 8px;
+	padding: 0;
+}
+
+.name p span{
+	font-family: 'Roboto', sans-serif;
+	font-style: 700;
+}
+
+.qr{
+	margin: 215px 75px 0 0;
+	padding: 0;
+	float: right;
+	border-radius: 21px;
+}
+
+.qr img{
+	border-radius: 21px;
+}
+
+@media screen and (max-width: 992px){
+	img {
+    	max-width: 100%;
+    	height: auto;
+	}
+
+	body{
+		overflow: auto;
+	}
+
+	header{
+		position: absolute;
+		padding: 100px 0;
+		height: auto;
+	}
+
+	.container {
+		display: block;
+    	width: 90%;
+    	margin: 0 auto;
+	}
+
+	.left{
+		display: grid;
+    	place-items: center;
+	}
+
+	.left img{
+		width: 75%;
+		height: auto;
+		padding: 2.5%;
+		background: linear-gradient(180deg, #faeaaf, #f9f5dc);
+		border-radius: 100%;
+	}
+
+	.slogan{
+		display: block;
+		margin: 100px 0 0 0;
+		padding: 25px;
+		width: 90%;
+		background: linear-gradient(90deg, #f4d98a, rgba(0, 0, 0, 0));
+		text-align: center;
+	}
+
+	.right{
+		display: grid;
+    	place-items: center;
+	}
+
+	.name{
+		margin: 100px 0 0 0;
+		text-align: center;
+	}
+
+	.qr{
+		margin: 100px 0 0 0;
+	}
+}
