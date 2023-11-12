@@ -1,0 +1,244 @@
+@font-face{
+	font-family: Arial;
+	src: url(fonts/Arial-BoldMT.ttf);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, 'Arial-BoldMT', sans-serif;
+	color: #fffcf0;
+	font-size: 18px;
+	overflow: hidden;
+}
+
+header{
+	display: flex;
+	margin: 0;
+	padding: 35px 0 0 0;
+	width: 100vw;
+	height: 100vh;
+	background: url(images/background.jpg) center/cover no-repeat;
+    top: 0;
+    left: 0;
+}
+
+.bg-figure{
+	content: "";
+	width: 25%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+}
+
+.container{
+	position: relative;
+	display: block;
+	justify-content: space-between;
+	width: 1315px;
+	margin: 0 auto;
+	padding: 0;
+	z-index: 1;
+}
+
+.top{
+	display: flex;
+}
+
+.avatar{
+	width: 80%;
+	height: auto;
+	padding: 1.5%;
+	margin: 10% 0 0 14%;
+	background: linear-gradient(180deg, #faeaaf, #f9f5dc);
+	border-radius: 100%;
+}
+
+.slogan{
+	margin: 60px 0 0 8%;
+	padding: 25px;
+	width: 550px;
+/*	background: linear-gradient(90deg, #f4d98a, rgba(0, 0, 0, 0));*/
+	border-radius: 20px;
+}
+
+.slogan h1{
+	margin: 0;
+	padding: 0;
+	font-size: 45px;
+	background: linear-gradient(-145deg, #fef3c2, #fdeba0);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.slogan p{
+	margin: 20px 0 0 0;
+	padding: 0;
+	width: 100%;
+	color: #fff;
+	font-size: 41px;
+}
+
+.bottom{
+	display: flex;
+}
+
+.name{
+	margin: 24px 25px 0 0;
+	padding: 20px 10px 0px 30px;
+	background: linear-gradient(90deg, #f4d98a, rgba(0, 0, 0, 0));
+	border-radius: 30px;
+}
+
+.name h1{
+	margin:  0 0 0 8px;
+	padding: 0;
+	font-size: 46px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.name ul{
+	margin: 5px 0 0 8px;
+	padding: 0;
+}
+
+.name ul li{
+	list-style-type: none;
+	font-size: 38px;
+}
+
+.name ul li::before{
+	content: '-';
+}
+
+.name ul li span{
+	display: block;
+	margin-left: 13px;
+}
+
+.name p{
+	margin: 5px 0 0 8px;
+	padding: 0;
+	font-size: 38px;
+}
+
+.qr{
+	margin: 24px 0px 0 0;
+	padding: 0;
+	float: right;
+	border-radius: 20px;
+	width: 320px;
+	height: 320px;
+}
+
+.qr img{
+	border-radius: 20px;
+	width: 320px;
+	height: 320px;
+}
+
+@media screen and (max-width: 1315px){
+	img {
+    	max-width: 100%;
+    	height: auto;
+	}
+
+	body{
+		overflow: auto;
+	}
+
+	header{
+		position: absolute;
+		padding: 15px 0 150px;
+		height: auto;
+	}
+
+	.container {
+		display: block;
+    	width: 90%;
+    	margin: 0 auto;
+	}
+
+	.bg-figure{
+		display: none;
+	}
+
+	.top{
+		display: grid;
+    	place-items: center;
+	}
+
+	.top img{
+		width: 65%;
+		height: auto;
+		padding: 2%;
+		background: linear-gradient(180deg, #faeaaf, #f9f5dc);
+		border-radius: 100%;
+	}
+
+	.slogan{
+		display: block;
+		margin: 65px 0 0 0;
+		padding: 25px;
+		width: 90%;
+		text-align: center;
+	}
+
+	.bottom{
+		display: grid;
+    	place-items: center;
+	}
+
+	.name{
+		margin: 100px 0 0 0;
+		text-align: center;
+	}
+
+	.qr{
+		margin: 100px 0 0 0;
+	}
+}
+
+@media screen and (max-width: 613px){
+	br{
+		display: none;
+	}
+
+	.slogan{
+		margin-top: 30px;
+	}
+
+	.slogan h1{
+		font-size: 28px;
+	}
+
+	.slogan p{
+		font-size: 24px;
+	}
+
+	.name{
+		margin-top: 30px;
+	}
+
+	.name h1{
+		font-size: 28px;
+	}
+
+	.name ul li{
+		font-size: 24px;
+	}
+
+	.name p{
+		font-size: 24px;
+	}
+
+	.qr{
+		margin-top: 150px;
+	}
+}
