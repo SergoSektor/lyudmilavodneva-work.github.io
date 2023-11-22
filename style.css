@@ -20,7 +20,7 @@ body{
 header{
 	display: flex;
 	margin: 0;
-	padding: 35px 0 0 0;
+	padding-top: 110px;
 	width: 100vw;
 	height: 100vh;
 	background: url(images/background.jpg) center/cover no-repeat;
@@ -30,18 +30,18 @@ header{
 
 .bg-figure{
 	content: "";
-	width: 25%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 0;
+	width: 27%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 .container{
 	position: relative;
 	display: block;
 	justify-content: space-between;
-	width: 1315px;
+	width: 1010px;
 	margin: 0 auto;
 	padding: 0;
 	z-index: 1;
@@ -71,7 +71,7 @@ header{
 .slogan h1{
 	margin: 0;
 	padding: 0;
-	font-size: 45px;
+	font-size: 34px;
 	background: linear-gradient(-145deg, #fef3c2, #fdeba0);
     -webkit-background-clip: text;
     color: transparent;
@@ -82,7 +82,7 @@ header{
 	padding: 0;
 	width: 100%;
 	color: #fff;
-	font-size: 41px;
+	font-size: 28px;
 }
 
 .bottom{
@@ -94,12 +94,13 @@ header{
 	padding: 20px 10px 0px 30px;
 	background: linear-gradient(90deg, #f4d98a, rgba(0, 0, 0, 0));
 	border-radius: 30px;
+	width: 660px;
 }
 
 .name h1{
 	margin:  0 0 0 8px;
 	padding: 0;
-	font-size: 46px;
+	font-size: 34px;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -110,7 +111,7 @@ header{
 
 .name ul li{
 	list-style-type: none;
-	font-size: 38px;
+	font-size: 24px;
 }
 
 .name ul li::before{
@@ -125,7 +126,7 @@ header{
 .name p{
 	margin: 5px 0 0 8px;
 	padding: 0;
-	font-size: 38px;
+	font-size: 24px;
 }
 
 .qr{
@@ -133,17 +134,17 @@ header{
 	padding: 0;
 	float: right;
 	border-radius: 20px;
-	width: 320px;
-	height: 320px;
+	width: 245px;
+	height: auto;
 }
 
 .qr img{
 	border-radius: 20px;
-	width: 320px;
-	height: 320px;
+	width: 245px;
+	height: auto;
 }
 
-@media screen and (max-width: 1315px){
+@media screen and (max-width: 1014px){
 	img {
     	max-width: 100%;
     	height: auto;
@@ -203,6 +204,10 @@ header{
 	.qr{
 		margin: 100px 0 0 0;
 	}
+
+	.name{
+		width: auto;
+	}
 }
 
 @media screen and (max-width: 613px){
@@ -240,5 +245,9 @@ header{
 
 	.qr{
 		margin-top: 150px;
+	}
+
+	.name{
+		width: auto;
 	}
 }
